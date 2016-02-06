@@ -14,9 +14,14 @@ public class ReverseNumber {
 			input = kb.nextInt();
 		}
 		
+		if (input < 0){
+			input = Math.abs(input);
+			System.out.print("-");
+		}
+		
 		String inputString = Integer.toString(input);
 		int n = inputString.length();
-				
+		
 		for (int i = 0; i < n; i++){
 			
 			int tmp = input%10; 
