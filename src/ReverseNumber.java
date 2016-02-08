@@ -46,13 +46,11 @@ public class ReverseNumber {
 		
 		//creates new/composited int
 		for (int k = 0; k < n; k++){
-			//
-			int tmp = (int) (Math.pow(10,((n-1)-k)) * reversedNum[k]);
-			newInt = newInt + tmp;
+			 newInt = newInt + (int) (Math.pow(10,((n-1)-k)) * reversedNum[k]);
 		}
 		
 		if (neg){
-			newInt = newInt - (newInt*2);
+			newInt = 0 - newInt; 
 		}
 		
 		kb.close();
