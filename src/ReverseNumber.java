@@ -22,25 +22,15 @@ public class ReverseNumber {
 	}	
 		
 	public static int flipInt(int input){
-		boolean neg = false;
 		int result = 0;
-		
-		if (input < 0){
-			neg = true;
-			input = Math.abs(input);
-		}
-	
+
 		while (input != 0){
 			
 			result = (result*10) + (input%10);
 			input = input/10; 
 			
 		}
-				
-		if (neg){
-			result = 0 - result; 
-		}
-		
+			
 		kb.close();
 		return result; 
 	}
