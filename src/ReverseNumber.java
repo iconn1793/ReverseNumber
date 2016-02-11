@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class ReverseNumber {
 	
 	static Scanner kb = new Scanner(System.in);
-	static int input;
 	
 	
 	public static void main(String[] args) {
@@ -13,7 +12,7 @@ public class ReverseNumber {
 						
 		while (userNum == 0) {
 			System.out.print("Please select a non-zero integer: ");
-			input = kb.nextInt();
+			userNum = kb.nextInt();
 		}
 		
 		int flipped = flipInt(userNum);
