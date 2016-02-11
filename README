@@ -1,0 +1,3 @@
+This java class contains the method flipInt() which will take any (non-zero) integer and return it as a sequentially opposite integer. For example, the integer "1234" will be returned as the integer "4321". 
+
+Running the ReverseNumber main method will allow you to try the method with your own input.
